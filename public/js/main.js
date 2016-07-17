@@ -1,6 +1,6 @@
 'use strict';
 
-var apiUrl = "http://searchbing-koushikkumarv.c9users.io";
+var apiUrl = "https://imagesearch-kkv.herokuapp.com";
 var numberOfClicks = 1;
 
 function ajaxRequest (method, url, callback) {

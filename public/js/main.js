@@ -83,7 +83,7 @@ function retreiveResults(){
                        resultSet.delete(inputQuery);
                    }
                    for(let result of resultSet){
-                       $(".latestSearchResults").append('<li><a>'+skimString(result,23)+'</a></li>');
+                       $(".latestSearchResults").append('<li id="latestSearchResult"><a>'+skimString(result,23)+'</a></li>');
                        $("li").last().on("click",function(){
                            $(".searchBox").val(result);
                            retreiveResults();

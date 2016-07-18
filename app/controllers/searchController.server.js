@@ -54,7 +54,7 @@ function searchController(db){
     };
     
     this.getLatestSearches = function(req,res){
-        searchQuery.find({},{_id:false}).sort({"when":-1}).limit(10).toArray(function(err,result){
+        searchQuery.find({},{_id:false}).sort({"_id":-1}).limit(10).toArray(function(err,result){
            if(err){
                throw err;
            } 
